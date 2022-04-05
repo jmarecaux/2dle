@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2dle</title>
+
+
+  <link rel="shortcut icon" href="favicon.ico" >
+
+  <script src="https://cdnjs.cloudfare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+  <script src="js/main.js"></script>
+
+  <link rel="stylesheet" href="css/styles.css"/>
+  <!--
+    No animations in this implementation
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  /> 
+  -->
+</head>
+<body>
+  <div id="container">
+    <div id="game">
+      <header>
+        <h1 class="title">2-DLE</h1>
+      </header>
+
+      <div id="board-container">
+        <div id="board">
+          
+        </div>
+      </div>
+
+      <div id="keyboard-container">
+        <div class="keyboard-row">
+          <button class="keyboard-button" id="q" data-key="q">Q</button>
+          <button class="keyboard-button" id="w" data-key="w">W</button>
+          <button class="keyboard-button" id="e" data-key="e">E</button>
+          <button class="keyboard-button" id="r" data-key="r">R</button>
+          <button class="keyboard-button" id="t" data-key="t">T</button>
+          <button class="keyboard-button" id="y" data-key="y">Y</button>
+          <button class="keyboard-button" id="u" data-key="u">U</button>
+          <button class="keyboard-button" id="i" data-key="i">I</button>
+          <button class="keyboard-button" id="o" data-key="o">O</button>
+          <button class="keyboard-button" id="p" data-key="p">P</button>
+        </div>
+        <div class="keyboard-row">
+          <div class="spacer-half"></div>
+          <button class="keyboard-button" id="a" data-key="a">A</button>
+          <button class="keyboard-button" id="s" data-key="s">S</button>
+          <button class="keyboard-button" id="d" data-key="d">D</button>
+          <button class="keyboard-button" id="f" data-key="f">F</button>
+          <button class="keyboard-button" id="g" data-key="g">G</button>
+          <button class="keyboard-button" id="h" data-key="h">H</button>
+          <button class="keyboard-button" id="j" data-key="j">J</button>
+          <button class="keyboard-button" id="k" data-key="k">K</button>
+          <button class="keyboard-button" id="l" data-key="l">L</button>
+          <div class="spacer-half"></div>
+        </div>
+        <div class="keyboard-row">
+          <button class="keyboard-button" data-key="return" class="wide-button">RET</button>
+          <button class="keyboard-button" id="z" data-key="z">Z</button>
+          <button class="keyboard-button" id="x" data-key="x">X</button>
+          <button class="keyboard-button" id="c" data-key="c">C</button>
+          <button class="keyboard-button" id="v" data-key="v">V</button>
+          <button class="keyboard-button" id="b" data-key="b">B</button>
+          <button class="keyboard-button" id="n" data-key="n">N</button>
+          <button class="keyboard-button" id="m" data-key="m">M</button>  
+          <button class="keyboard-button" data-key="delete" class="wide-button">DEL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
